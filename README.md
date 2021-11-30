@@ -17,3 +17,14 @@ Tasks to do:
 7. Run game again
 
 8. User pick the category for round
+
+
+#File Structuring
+
+main.py - run main game
+
+word_bank.py - get word bank array from an input word
+
+timer.py - get and display time
+
+user.py - user input
