@@ -20,7 +20,7 @@ Tasks to do:
 
 9. Added functionality: have option for random words or words in a category
 
-#File Structuring
+# File Structuring
 
 main.py - run main game
 
@@ -30,6 +30,6 @@ timer.py - get and display time
 
 user.py - user input
 
-#APIs
+# APIs
 https://random-word-form.herokuapp.com/
 https://www.datamuse.com/api/
