@@ -18,6 +18,7 @@ Tasks to do:
 
 8. User pick the category for round
 
+9. Added functionality: have option for random words or words in a category
 
 #File Structuring
 
@@ -28,3 +29,7 @@ word_bank.py - get word bank array from an input word
 timer.py - get and display time
 
 user.py - user input
+
+#APIs
+https://random-word-form.herokuapp.com/
+https://www.datamuse.com/api/
