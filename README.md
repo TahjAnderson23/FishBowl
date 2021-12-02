@@ -20,6 +20,20 @@ Tasks to do:
 
 9. Added functionality: have option for random words or words in a category
 
+# Game Instructions
+
+1. Game begins
+2. User may enter preferred category
+3. Timer starts 
+4. Words start showing up and user controls come into play 
+5. Everytime player passes on a word, a new word is called 
+6. Score is incremented for eveyr correct answer 
+7. Game ends 
+8. Score is displayed
+9. User may play again or not
+
+
+
 # File Structuring
 
 main.py - run main game
