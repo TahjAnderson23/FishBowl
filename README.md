@@ -1,6 +1,6 @@
 # FishBowl
 This game is designed to mimic charades! If you've ever played the game "headbands" this game is for you!
-
+Created By: Tyler Piel, Ciara Morrissey, Ryan Mahon, and Tahj Anderson
 # Getting Started
 1. Clone the repo
 2. Run 'python3 main.py'
