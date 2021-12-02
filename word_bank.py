@@ -18,8 +18,5 @@ def get_words_rhyme(key):
     for i in range(len(response.json())):
         word_list.append(response.json()[i]['word'])
     return word_list
-
-bank = get_words_rhyme('apple')
-
-print(bank)
+    
 #get_animal_words()
