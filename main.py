@@ -1,6 +1,6 @@
 from user import *
 from word_bank import *
-##from timer import *
+from timer import *
 from random import seed
 from random import randint
 def main():
@@ -53,7 +53,7 @@ def main():
 
         correct = input("Was this word guessed correctly?:(Y/N) ")
         print("\n")
-
+        #countdown()
         if correct == "Y":
             totalScore += 1
 
