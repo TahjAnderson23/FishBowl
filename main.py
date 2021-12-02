@@ -1,5 +1,5 @@
 from user import *
-
+from word_bank import get_animal_words
 def main():
     
     ## Game starts
@@ -35,7 +35,7 @@ def main():
         category = getCategory()
 
         ## Here is when the word to act out would be given
-
+        get_animal_words()
         correct = input("Was this word guessed correctly?:(Y/N) ")
         print("\n")
 
