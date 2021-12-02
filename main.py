@@ -1,8 +1,10 @@
 from user import *
 from word_bank import get_animal_words
 ##from timer import *
+from random import seed
+from random import randint
 def main():
-    
+    seed(1)
     ## Game starts
 
     ## User can choose what game mode to choose (Animal words or general words)
@@ -33,7 +35,7 @@ def main():
 
     while 1:
         print("Player %d's turn\nTotal Score: %d" %(currentPlayer,totalScore))
-        category = getCategory()
+        ##category = getCategory()
 
         ## Here is when the word to act out would be given
         get_animal_words()
@@ -48,7 +50,22 @@ def main():
             currentPlayer = 1
         else:
             currentPlayer+=1
+        
+        ## Trying out a decision tree based on the game type. Should work
+        if gameType = 1:
+                get_animal_words()
+        
+        elif gameType = 2:
+            category = input("Create a category from this word: ")
+            w_list = get_words_like(category)
+            r_index = randint(0,99)
+            print(w_list[r_index])
 
+        else gameType = 3:
+            rhyme = input("Get words that rhyme with this word: ")
+            w_list = get_words_like(rhyme)
+            r_index = randint(0,99)
+            print(w_list[r_index])
 
 if __name__ == "__main__":
     main()
