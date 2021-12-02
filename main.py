@@ -3,6 +3,14 @@ from word_bank import *
 from timer import *
 from random import seed
 from random import randint
+
+import signal
+
+## This function handles the timer
+def timeout_handler(signal, frame):
+    raise Exception('Time is up!')
+signal.signal(signal.SIGALRM, timeout_handler)
+
 def main():
     seed(1)
     ## Game starts
@@ -31,31 +39,36 @@ def main():
 
  
     totalScore = 0
+    ## This determines how long the program runs
+    signal.alarm(70)
+    try:
+        while 1:
+            print("Score: %d"%(totalScore))
+            
+            ## Trying out a decision tree based on the game type. Should work
+            if gameType == 1:
+                    get_animal_words()
+            
+            elif gameType == 2:
+                category = input("Create a category from this word: ")
+                w_list = get_words_like(category)
+                r_index = randint(0,99)
+                print(w_list[r_index])
 
-    while 1:
-        print("Score: %d"%(totalScore))
-        
-        ## Trying out a decision tree based on the game type. Should work
-        if gameType == 1:
-                get_animal_words()
-        
-        elif gameType == 2:
-            category = input("Create a category from this word: ")
-            w_list = get_words_like(category)
-            r_index = randint(0,99)
-            print(w_list[r_index])
+            else:
+                rhyme = input("Get words that rhyme with this word: ")
+                w_list = get_words_rhyme(rhyme)
+                r_index = randint(0,99)
+                print(w_list[r_index])
 
-        else:
-            rhyme = input("Get words that rhyme with this word: ")
-            w_list = get_words_rhyme(rhyme)
-            r_index = randint(0,99)
-            print(w_list[r_index])
-
-        correct = input("Was this word guessed correctly?:(Y/N) ")
-        print("\n")
-        #countdown()
-        if correct == "Y":
-            totalScore += 1
+            correct = input("Was this word guessed correctly?:(Y/N) ")
+            print("\n")
+            if correct == "Y":
+                totalScore += 1
+    except:
+        print("\ntimes up!\n")
+        print("Your final score: ",totalScore)
+        print("\nThank you for playing!!")
 
 if __name__ == "__main__":
     main()
