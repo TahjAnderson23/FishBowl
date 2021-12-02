@@ -23,7 +23,7 @@ Tasks to do:
 # Getting Started
 1. Clone the repo
 2. Run 'python3 main.py'
-
+3. Enjoy!
 # Game Instructions
 
 1. Game begins
