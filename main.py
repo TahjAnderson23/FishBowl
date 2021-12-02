@@ -40,7 +40,7 @@ def main():
  
     totalScore = 0
     ## This determines how long the program runs
-    signal.alarm(70)
+    signal.alarm(5)
     try:
         while 1:
             print("Score: %d"%(totalScore))
@@ -68,7 +68,12 @@ def main():
     except:
         print("\ntimes up!\n")
         print("Your final score: ",totalScore)
-        print("\nThank you for playing!!")
+        val = input("Would you like to play again? (Y/N")
+
+        if(val == 'Y'):
+            main()
+        else:
+            print("\nThank you for playing!!")
 
 if __name__ == "__main__":
     main()
