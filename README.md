@@ -17,6 +17,7 @@ This game is designed to mimic charades! If you've ever played the game "headban
 8. Score is displayed
 9. User may play again or not
 
+The timer begins as soon as the game starts! Make sure to be quick!
 
 
 # File Structuring
