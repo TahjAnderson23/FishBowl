@@ -49,5 +49,5 @@ timer.py - get and display time
 user.py - user input
 
 # APIs
-https://random-word-form.herokuapp.com/
-https://www.datamuse.com/api/
+1. https://random-word-form.herokuapp.com/
+2. https://www.datamuse.com/api/
