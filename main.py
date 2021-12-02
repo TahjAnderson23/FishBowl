@@ -1,5 +1,6 @@
 from user import *
 from word_bank import get_animal_words
+##from timer import *
 def main():
     
     ## Game starts
@@ -47,9 +48,6 @@ def main():
             currentPlayer = 1
         else:
             currentPlayer+=1
-
-
-
 
 
 if __name__ == "__main__":
