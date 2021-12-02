@@ -20,6 +20,10 @@ Tasks to do:
 
 9. Added functionality: have option for random words or words in a category
 
+# Getting Started
+1. Clone the repo
+2. Run 'python3 main.py'
+3. Enjoy!
 # Game Instructions
 
 1. Game begins
