@@ -43,8 +43,6 @@ def main():
             totalScore += 1
 
 
-
-
         if currentPlayer == numPlayers:
             currentPlayer = 1
         else:
